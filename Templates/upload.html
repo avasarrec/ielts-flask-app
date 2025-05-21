@@ -1,0 +1,14 @@
+<!-- templates/upload.html -->
+<!DOCTYPE html>
+<html>
+<head>
+    <title>IELTS Speaking Upload</title>
+</head>
+<body>
+    <h1>Upload Your Responses</h1>
+    <form action="/upload" method="post" enctype="multipart/form-data">
+        <input type="file" name="file" accept=".csv" required>
+        <button type="submit">Submit</button>
+    </form>
+</body>
+</html>
