@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Submit IELTS Feedback Table</title>
+</head>
+<body>
+    <h1>Submit IELTS Speaking Feedback</h1>
+    <form action="/feedback_table" method="post">
+        <h3>Feedback Entry 1</h3>
+        <label>Question:</label><br>
+        <input type="text" name="questions" value="Do you have any hobbies?" required><br>
+
+        <label>Spoken and Written Response:</label><br>
+        <textarea name="responses" required>Well in general I would say that I have several hobbies...</textarea><br>
+
+        <label>Errors and Why They Affect the Score:</label><br>
+        <textarea name="errors" required>Minor grammatical errors such as missing articles...</textarea><br>
+
+        <label>Corrected Answer (Band 7+):</label><br>
+        <textarea name="corrected_answers" required>Well, in general, I would say that I have several hobbies including...</textarea><br>
+
+        <label>What the Candidate Should Have Done:</label><br>
+        <textarea name="improvements" required>Use articles correctly and maintain consistent verb forms...</textarea><br>
+
+        <label>Fluency & Coherence:</label><br>
+        <input type="text" name="fluency_scores" value="6.5" required><br>
+
+        <label>Lexical Resource:</label><br>
+        <input type="text" name="lexical_scores" value="6.5" required><br>
+
+        <label>Grammatical Range & Accuracy:</label><br>
+        <input type="text" name="grammar_scores" value="6" required><br>
+
+        <label>Pronunciation:</label><br>
+        <input type="text" name="pronunciation_scores" value="7" required><br>
+
+        <label>Overall Band Score Estimate:</label><br>
+        <input type="text" name="overall_scores" value="6.5" required><br>
+
+        <label>In-Depth Feedback:</label><br>
+        <textarea name="in_depth_feedback" required>Your response is generally clear but focus on grammatical accuracy and fluency.</textarea><br><br>
+
+        <input type="submit" value="Submit Feedback">
+    </form>
+</body>
+</html>

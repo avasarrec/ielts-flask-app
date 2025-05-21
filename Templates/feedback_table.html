@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head><title>Feedback Table</title></head>
+<body>
+    <h1>IELTS Speaking Feedback Table</h1>
+    <table border="1">
+        <thead>
+            <tr>
+                <th>Question</th>
+                <th>Response</th>
+                <th>Errors and Why They Affect the Score</th>
+                <th>Corrected Answer (Band 7+)</th>
+                <th>What the Candidate Should Have Done to Achieve 7+</th>
+                <th>Fluency & Coherence</th>
+                <th>Lexical Resource</th>
+                <th>Grammatical Range & Accuracy</th>
+                <th>Pronunciation</th>
+                <th>Overall Band Score Estimate</th>
+                <th>In-Depth Feedback and Areas for Improvement</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for row in feedback_data %}
+            <tr>
+                <td>{{ row['Question'] }}</td>
+                <td>{{ row['Response'] }}</td>
+                <td>{{ row['Errors and Why They Affect the Score'] }}</td>
+                <td>{{ row['Corrected Answer (Band 7+)'] }}</td>
+                <td>{{ row['What the Candidate Should Have Done to Achieve 7+'] }}</td>
+                <td>{{ row['Fluency & Coherence'] }}</td>
+                <td>{{ row['Lexical Resource'] }}</td>
+                <td>{{ row['Grammatical Range & Accuracy'] }}</td>
+                <td>{{ row['Pronunciation'] }}</td>
+                <td>{{ row['Overall Band Score Estimate'] }}</td>
+                <td>{{ row['In-Depth Feedback and Areas for Improvement'] }}</td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+</body>
+</html>

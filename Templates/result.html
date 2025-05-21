@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IELTS Speaking Assessment Result</title>
+</head>
+<body>
+    <h1>IELTS Speaking Assessment Result</h1>
+
+    <p><strong>Fluency and Coherence:</strong> {{ fluency }}</p>
+    <p>Feedback: {{ feedback['Fluency and Coherence'][fluency] }}</p>
+
+    <p><strong>Lexical Resource:</strong> {{ lexical }}</p>
+    <p>Feedback: {{ feedback['Lexical Resource'][lexical] }}</p>
+
+    <p><strong>Grammatical Range and Accuracy:</strong> {{ grammar }}</p>
+    <p>Feedback: {{ feedback['Grammatical Range and Accuracy'][grammar] }}</p>
+
+    <p><strong>Pronunciation:</strong> {{ pronunciation }}</p>
+    <p>Feedback: {{ feedback['Pronunciation'][pronunciation] }}</p>
+
+    <h2>Average Band Score: {{ average_score }}</h2>
+</body>
+</html>
